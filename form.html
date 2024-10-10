@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 300px;
+            padding: 5px;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group input[type="file"] {
+            width: 300px;
+        }
+        .form-group .skills {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .buttons input {
+            padding: 10px 15px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Registrasi</h2>
+        <form>
+            <fieldset>
+                <legend>Biodata</legend>
+                <div class="form-group">
+                    <label>Nama Mahasiswa:</label>
+                    <input type="text" name="nama_mahasiswa" placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                    <label>No Induk Mahasiswa (NIM):</label>
+                    <input type="text" name="nim" placeholder="123456789">
+                </div>
+                <div class="form-group">
+                    <label>Alamat Mahasiswa:</label>
+                    <textarea name="alamat_mahasiswa" placeholder="Alamat Anda"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Lahir:</label>
+                    <select name="tanggal">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                    </select>
+                    <select name="bulan">
+                        <option>Januari</option>
+                        <option>Februari</option>
+                        <option>Maret</option>
+                    </select>
+                    <select name="tahun">
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" name="jenis_kelamin" value="Pria" checked>Pria
+                    <input type="radio" name="jenis_kelamin" value="Wanita">Wanita
+                </div>
+                <div class="form-group">
+                    <label>Upload Foto:</label>
+                    <input type="file" name="foto">
+                </div>
+                <div class="form-group">
+                    <label>URL Website:</label>
+                    <input type="text" name="url_website" placeholder="URL Website Anda">
+                </div>
+                <div class="form-group">
+                    <label>Perguruan Tinggi:</label>
+                    <input type="text" name="perguruan_tinggi">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Info Akun</legend>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Email Anda">
+                </div>
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input type="text" name="username" placeholder="Username Anda">
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Password Anda">
+                </div>
+                <div class="form-group">
+                    <label>Ulangi Password:</label>
+                    <input type="password" name="ulang_password" placeholder="Password Anda">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kemampuan Dasar</legend>
+                <div class="form-group skills">
+                    <input type="checkbox" name="kemampuan" value="HTML">HTML
+                    <input type="checkbox" name="kemampuan" value="CSS">CSS
+                    <input type="checkbox" name="kemampuan" value="Javascript">Javascript
+                    <input type="checkbox" name="kemampuan" value="PHP">PHP
+                    <input type="checkbox" name="kemampuan" value="MySQL">MySQL
+                    <input type="checkbox" name="kemampuan" value="Laravel">Laravel
+                    <input type="checkbox" name="kemampuan" value="React Native">React Native
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
